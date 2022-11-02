@@ -9,6 +9,7 @@
 import sys
 import random
 
+
 def main():
     """ Uses random choice to decide computer selection and user inputs their choice """
 
@@ -23,12 +24,11 @@ def main():
             return "You won"
 
         return "You lost"
-
         # r > s, s > p, p > r
 
     def is_win(player, opponent):
         if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') \
-            or (player == 'p' and opponent == 'r'):
+                or (player == 'p' and opponent == 'r'):
             return True
 
     while True:
@@ -39,6 +39,7 @@ def main():
             break
 
     return None
+
 
 if __name__ == "__main__":
     main()
