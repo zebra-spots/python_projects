@@ -1,5 +1,5 @@
 #! /usr/bin/python
-# Name: rockpaperscissors.py
+# Name: RockPaperScissors.py
 # Author: Chris
 # Revision v1.0
 # Description: This program is a rock paper scissors game.
@@ -31,7 +31,13 @@ def main():
             or (player == 'p' and opponent == 'r'):
             return True
 
-    print(play())
+    while True:
+
+        print(play())
+        userin = input('Press n to quit, Or press any key to play again')
+        if userin.lower() == 'n':
+            break
+    #print(play())
 
     return None
 
