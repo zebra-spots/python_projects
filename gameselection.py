@@ -45,7 +45,7 @@ def playhangman():
     playername = input("What is your name? ")
 
     words = '''Aragorn Arwen Bilbo Balin Boromir Denethor Elrond Eomer Eowyn Faramir Frodo \
-    Galadriel Gandalf Gimli Gollum Isildur Legolas Merry Pippin Sam Saruman Sauron Shelob Treebeard Wormtounge'''
+    Galadriel Gandalf Gimli Gollum Isildur Legolas Merry Pippin Sam Saruman Sauron Shelob Treebeard Wormtongue'''
     words = words.split(' ')
 
     word = random.choice(words)
