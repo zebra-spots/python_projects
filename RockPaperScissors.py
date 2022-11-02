@@ -37,7 +37,6 @@ def main():
         userin = input('Press n to quit, Or press any key to play again')
         if userin.lower() == 'n':
             break
-    #print(play())
 
     return None
 
