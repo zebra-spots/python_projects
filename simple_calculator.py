@@ -46,7 +46,7 @@ def calculator(stringin):
 while True:
     stringin = input("Enter a simple maths equation between two numbers (e.g: 2+2): ")        
     print(calculator(stringin))
-    goagain = input("Do another calculation? Y / N")
+    goagain = input("Do another calculation? Y / N: ")
     if "N" in goagain.upper():
         print("Bye!")
         break
