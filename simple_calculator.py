@@ -14,7 +14,7 @@ def calculator(stringin):
             x = int(y[0])+int(y[1])
             return x
         except:
-            return("addition error")
+            return "addition error"
         
     elif "-" in stringin:
         try:
@@ -22,7 +22,7 @@ def calculator(stringin):
             x = int(y[0])-int(y[1])
             return x
         except:
-            return("subtraction error")
+            return "subtraction error"
         
     elif "*" in stringin:
         try:
@@ -30,7 +30,7 @@ def calculator(stringin):
             x = int(y[0])*int(y[1])
             return x
         except:
-            return("multiplication error")
+            return "multiplication error"
             
     elif "/" in stringin:
         try:
@@ -43,6 +43,10 @@ def calculator(stringin):
     else:
         return "Invalid operation"
 
-
-stringin = input("Enter a simple maths equation between two numbers (e.g: 2+2): ")        
-print(calculator(stringin))
+while True:
+    stringin = input("Enter a simple maths equation between two numbers (e.g: 2+2): ")        
+    print(calculator(stringin))
+    goagain = input("Do another calculation? Y / N")
+    if "N" in goagain.upper():
+        print("Bye!")
+        break
