@@ -9,31 +9,40 @@
 
 def calculator(stringin):
     if "+" in stringin:
-        y = stringin.split("+")
-        x = int(y[0])+int(y[1])
-        return x
+        try:
+            y = stringin.split("+")
+            x = int(y[0])+int(y[1])
+            return x
+        except:
+            return("addition error")
         
     elif "-" in stringin:
-        y = stringin.split("-")
-        x = int(y[0])-int(y[1])
-        return x
+        try:
+            y = stringin.split("-")
+            x = int(y[0])-int(y[1])
+            return x
+        except:
+            return("subtraction error")
         
     elif "*" in stringin:
-        y = stringin.split("*")
-        x = int(y[0])*int(y[1])
-        return x
-        
+        try:
+            y = stringin.split("*")
+            x = int(y[0])*int(y[1])
+            return x
+        except:
+            return("multiplication error")
+            
     elif "/" in stringin:
         try:
             y = stringin.split("/")
             x = int(y[0])/int(y[1])
             return int(x)
         except:
-            return "Invalid operatin"
+            return "division error"
         
     else:
         return "Invalid operation"
 
 
-stringin = input("Enter a simple maths equation: ")        
+stringin = input("Enter a simple maths equation between two numbers (e.g: 2+2): ")        
 print(calculator(stringin))
